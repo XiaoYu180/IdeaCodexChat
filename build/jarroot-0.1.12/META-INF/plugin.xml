@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.local.codexchat</id>
+    <name>Codex Chat</name>
+    <vendor email="local@example.com">Local</vendor>
+    <idea-version since-build="242"/>
+
+    <description><![CDATA[
+        Adds a Codex Chat tool window to IntelliJ IDEA with editor selection and console error context support.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+            id="Codex Chat"
+            anchor="right"
+            factoryClass="com.local.codexchat.CodexChatToolWindowFactory"
+            icon="/icons/codex.svg"/>
+    </extensions>
+</idea-plugin>
